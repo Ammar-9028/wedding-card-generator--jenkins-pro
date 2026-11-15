@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shaadi Card Studio | Wedding Invitation Generator</title><meta name="theme-color" content="#1a0710">
+<meta name="description" content="Naam, date aur venue daalo. Ek saath kai alag-alag animated wedding cards banao aur download karo.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Allura&amp;family=Pinyon+Script&amp;family=Alex+Brush&amp;family=Parisienne&amp;family=Cormorant+Garamond:wght@500;700&amp;family=Cinzel:wght@500;700&amp;family=Playfair+Display:wght@500;700&amp;family=Marcellus&amp;family=Lora:wght@500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<header class="top"><a class="logo" href="#top">Shaadi<b>Cards</b></a><nav><a href="#studio">Details</a><a href="#results">Cards</a></nav></header>
+<main id="top">
+<section class="hero"><p class="chip">Instant &middot; Unique &middot; Downloadable</p>
+<h1><span>Shaadi ka card,</span> <em>ek click</em> mein.</h1>
+<p class="sub">Bas apni details daalo. Hum ek saath kai alag-alag, animated wedding cards bana denge. Har baar naya design, aur PNG, PDF ya ZIP mein download.</p>
+<a class="btn" href="#studio">Card banana shuru karo</a></section>
+
+<section id="studio" class="panel"><h2>Shaadi ki details</h2>
+<div class="form">
+<label>Dulhan ka naam *<input id="bride" maxlength="30" autocomplete="off"></label>
+<label>Dulha ka naam *<input id="groom" maxlength="30" autocomplete="off"></label>
+<label>Dulhan ke parents<input id="brideParents" maxlength="60" placeholder="Mr. &amp; Mrs. Sharma"></label>
+<label>Dulha ke parents<input id="groomParents" maxlength="60" placeholder="Mr. &amp; Mrs. Verma"></label>
+<label>Pehle kiska naam<select id="order"><option value="bride">Dulhan</option><option value="groom">Dulha</option></select></label>
+<label>Invitation style<select id="tradition"><option value="universal">Universal</option><option value="hindu">Hindu</option><option value="muslim">Muslim (Nikah)</option><option value="sikh">Sikh (Anand Karaj)</option><option value="christian">Christian</option></select></label>
+</div>
+<h3>Events</h3><div id="events"></div>
+<button id="addEvent" class="btn ghost sm" type="button">+ Aur event jodo</button>
+<div class="form" style="margin-top:1.2rem">
+<label>RSVP number / email<input id="rsvp" maxlength="50" placeholder="+91 98765 43210"></label>
+<label>Dress code (optional)<input id="dress" maxlength="40" placeholder="Traditional"></label>
+<label class="wide">Chhota sa message (optional)<input id="message" maxlength="120" placeholder="Aapki maujoodgi hamari khushi dugni kar degi."></label>
+</div>
+<h3>Cards ki settings</h3>
+<div class="form">
+<label>Ek saath kitne cards: <b id="cntv">6</b><input id="count" type="range" min="1" max="12" value="6"></label>
+<label>Card ka size<select id="format"><option value="1500">Portrait (2:3)</option><option value="1414">Print A5 (1:1.41)</option><option value="1778">WhatsApp Story (9:16)</option></select></label>
+</div>
+<div class="actions"><button id="gen" class="btn big" type="button">Cards generate karo</button><button id="sample" class="btn ghost" type="button">Sample details bharo</button></div>
+<p id="msg" class="msg" role="status"></p></section>
+
+<section id="results" class="results" hidden>
+<div class="bar"><div><h2>Aapke cards</h2><p id="stat" class="dim"></p></div>
+<div class="actions"><button id="more" class="btn ghost sm" type="button">+ Aur cards</button><button id="zip" class="btn sm" type="button">Sab PNG (ZIP)</button><button id="pdf" class="btn sm" type="button">Sab PDF</button></div></div>
+<div id="grid" class="cards"></div></section>
+</main>
+<footer>Shaadi Card Studio &middot; Browser mein hi bante hain, aapka data kahin upload nahi hota.</footer>
+<div id="modal" class="modal" hidden><button class="x" aria-label="Band karo">&times;</button><div id="mbody"></div></div>
+<script src="assets/js/engine.js"></script><script src="assets/js/export.js"></script><script src="assets/js/app.js"></script>
+</body></html>

@@ -1,5 +1,5 @@
 kya haal hai dosto 
-mats hai na sb
+m
 
 # Shaadi Card Studio
 Wedding invitation generator. Enter details once, get many unique animated cards at the same time; download each as PNG or PDF, or everything as a ZIP / multi-page PDF.

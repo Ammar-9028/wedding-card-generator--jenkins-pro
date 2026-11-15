@@ -1,5 +1,4 @@
-kya haal hai dosto 
-m
+main hu na 
 
 # Shaadi Card Studio
 Wedding invitation generator. Enter details once, get many unique animated cards at the same time; download each as PNG or PDF, or everything as a ZIP / multi-page PDF.

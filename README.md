@@ -1,4 +1,4 @@
-kya bbattt hai
+tu na 
 # Shaadi Card Studio
 Wedding invitation generator. Enter details once, get many unique animated cards at the same time; download each as PNG or PDF, or everything as a ZIP / multi-page PDF.
 Pure HTML5 + CSS3 + vanilla JS (all cards are generated in the browser as SVG). Packaged with Maven as a WAR for Tomcat 9, Java 21.
